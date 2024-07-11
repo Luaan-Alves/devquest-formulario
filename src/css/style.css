@@ -1,0 +1,100 @@
+body{
+    flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(../images/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.texto-informativo{
+    color: #fff;
+    width: 300px;
+    height: 111px;
+}
+
+.texto-informativo h1{
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.texto-informativo p{
+    margin-top: 11px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.informacoes-pessoais{
+    width: 340px;
+    height: auto;
+    border: 1px solid transparent;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 2px #ffffff;
+}
+
+.informacoes-pessoais #nome,#email,#telefone,#mensagem{
+    border: 1px solid #000000;
+    height: 35px;
+    width: 298px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.informacoes-pessoais #nome:focus,#email:focus,#telefone:focus,#mensagem:focus{
+    outline: none;
+}
+
+.informacoes-pessoais #nome:hover,#email:hover,#telefone:hover,#mensagem:hover{
+    border: 2px solid #e26804;
+}
+
+.informacoes-pessoais .aviso{
+    display: none;
+    font-size: 10px;
+    color: #F52E2E;
+    padding-left: 5px;
+    padding-bottom: 8px;
+}
+
+.informacoes-pessoais .aviso.ativado{
+    display: block;
+}
+
+.informacoes-pessoais #mensagem{
+    height: 100px;
+    padding-bottom: 72px;
+}
+
+.informacoes-pessoais p{
+    font-size: 15px;
+    
+}
+
+button{
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid transparent;
+    background-color: #3CCC87;
+    border-radius: 5px;
+    height: 43px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s ease;
+    margin-top: 50px;
+}
+
+button:hover{
+    font-size: 17px;
+}
